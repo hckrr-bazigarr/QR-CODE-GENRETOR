@@ -30,6 +30,11 @@ Generate beautiful QR codes with a modern Green → Cyan → Blue gradient, prev
 Customize filenames, generate multiple QR codes, and enjoy a colorful terminal interface.
 
 Simple. Stylish. Powerful. 🔥
+### Step 1 — Update Packages
+
+```bash
+pkg update && pkg upgrade -y
+```
 
 ✨ Features
 
