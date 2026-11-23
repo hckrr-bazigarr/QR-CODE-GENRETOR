@@ -46,7 +46,7 @@ Customize filenames, generate multiple QR codes, and enjoy a colorful terminal i
 | 📝 Custom Filename | Choose your own image name |
 | 🛡️ Error Correction | High QR error correction (Level H) |
 | 📂 Auto Directory | Automatically creates output folder |
-| 🎭 FIGlet Banner | Stylish terminal banner |
+| 🎭 FIGlet Banner | Terminal banner |
 
 ---
 
