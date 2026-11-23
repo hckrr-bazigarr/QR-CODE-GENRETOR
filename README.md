@@ -18,7 +18,7 @@
   <img src="https://img.shields.io/badge/Linux-Kali%20%7C%20Debian-black?style=for-the-badge&logo=linux">
   <img src="https://img.shields.io/badge/Output-PNG-orange?style=for-the-badge">
 </p><p align="center">
-  <b>A stylish Green-Cyan-Blue Gradient QR Code Generator for Termux, Android and Linux.</b>
+  <b>A Stylish Green-Cyan-Blue Gradient QR Code Generator for Termux, Android and Linux.</b>
 </p>---
 
 📌 About
@@ -30,11 +30,8 @@ Generate beautiful QR codes with a modern Green → Cyan → Blue gradient, prev
 Customize filenames, generate multiple QR codes, and enjoy a colorful terminal interface.
 
 Simple. Stylish. Powerful. 🔥
-### Step 1 — Update Packages
 
-```bash
-pkg update && pkg upgrade -y
-```
+---
 
 ✨ Features
 
@@ -55,29 +52,57 @@ Feature| Description
 
 ⚡ One-Line Quick Install
 
-📱 Termux (Android)
+📱 Termux — Android
 
-First install the required packages:
+Step 1 — Install Required Packages
 
 pkg update && pkg install git python figlet -y
 
-Clone, install dependencies and run:
+Step 2 — Clone, Install and Run
 
-git clone https://github.com/hckrr-bazigarr/QR-CODE-GENRETOR.git && cd QR-CODE-GENRETOR && pip install "qrcode[pil]" Pillow && python3 qr-code.py
+git clone https://github.com/hckrr-bazigarr/QR-CODE-GENRETOR.git
 
-🐉 Kali Linux
+cd QR-CODE-GENRETOR
 
-Install system packages:
+pip install -r requirements.txt
 
-sudo apt update && sudo apt install git python3 python3-pip python3-venv figlet -y
-
-Clone, create virtual environment, install dependencies and run:
-
-git clone https://github.com/hckrr-bazigarr/QR-CODE-GENRETOR.git && cd QR-CODE-GENRETOR && python3 -m venv .venv && source .venv/bin/activate && pip install "qrcode[pil]" Pillow && python3 qr-code.py
+python3 qr-code.py
 
 ---
 
-📲 Installation Guide
+🐉 Kali Linux
+
+Step 1 — Install Required Packages
+
+sudo apt update && sudo apt install git python3 python3-pip python3-venv figlet -y
+
+Step 2 — Clone Repository
+
+git clone https://github.com/hckrr-bazigarr/QR-CODE-GENRETOR.git
+
+Step 3 — Open Project Directory
+
+cd QR-CODE-GENRETOR
+
+Step 4 — Create Virtual Environment
+
+python3 -m venv .venv
+
+Step 5 — Activate Virtual Environment
+
+source .venv/bin/activate
+
+Step 6 — Install Dependencies
+
+pip install -r requirements.txt
+
+Step 7 — Run BaziGarr QR Generator
+
+python3 qr-code.py
+
+---
+
+📲 Detailed Installation Guide
 
 📱 Termux — Android
 
@@ -103,7 +128,7 @@ cd QR-CODE-GENRETOR
 
 Step 6 — Install Python Dependencies
 
-pip install "qrcode[pil]" Pillow
+pip install -r requirements.txt
 
 Step 7 — Run BaziGarr QR Generator
 
@@ -137,9 +162,9 @@ Step 6 — Activate Virtual Environment
 
 source .venv/bin/activate
 
-Step 7 — Install Python Dependencies
+Step 7 — Install Dependencies
 
-pip install "qrcode[pil]" Pillow
+pip install -r requirements.txt
 
 Step 8 — Run BaziGarr QR Generator
 
@@ -152,18 +177,18 @@ python3 qr-code.py
 <p align="center">
   <img src="terminal-preview.jpg" alt="BaziGarr QR Generator Terminal Preview" width="90%">
 </p><p align="center">
-  <b>Beautiful gradient QR codes directly from your terminal.</b>
+  <b>Beautiful Gradient QR Codes Directly in Your Terminal.</b>
 </p>---
 
 🎯 How to Use
 
 1. Enter Your URL
 
-🔗 Enter Link/URL: https://github.com
+Enter Link/URL: https://github.com
 
 2. Enter Image Filename
 
-📝 Enter Name of the QR-Image: GitHub
+Enter Name of the QR-Image: GitHub
 
 3. Preview Your QR Code
 
@@ -171,19 +196,17 @@ Your generated QR code will appear directly in the terminal.
 
 4. Save Your QR Image
 
-💾 SAVE THIS IMAGE? (y/n):
+SAVE THIS IMAGE? (y/n):
 
 - "y" — Save the QR image.
 - "n" — Skip saving the QR image.
 
 5. Generate Another QR Code
 
-1. Next Link 🔗
-2. Exit ❌
+1. Next Link
+2. Exit
 
 Choose "1" to generate another QR code or "2" to exit.
-
-Tip: Type "exit" when asked for a URL to close the program.
 
 ---
 
@@ -201,7 +224,7 @@ Pictures/
     ├── YouTube.png
     └── Website.png
 
-Note: The default output path is configured for Android shared storage. On Linux, change "SAVE_DIR" in "qr-code.py" to a suitable directory.
+Note: The default output directory is configured for Android shared storage. On Linux, change "SAVE_DIR" in "qr-code.py" to a suitable directory.
 
 ---
 
@@ -220,14 +243,14 @@ BORDER = 4
 
 📦 Requirements
 
-Python Libraries
+Python Dependencies
 
 - "qrcode[pil]"
 - "Pillow"
 
-Install them with:
+Install all dependencies:
 
-pip install "qrcode[pil]" Pillow
+pip install -r requirements.txt
 
 System Dependency
 
@@ -258,8 +281,9 @@ FIGlet| Terminal ASCII banner
 QR-CODE-GENRETOR/
 │
 ├── README.md
-├── qr-code.py
-└── terminal-preview.jpg
+├── requirements.txt
+├── terminal-preview.jpg
+└── qr-code.py
 
 ---
 
